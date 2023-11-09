@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        @keyframes fadein {
+            from {opacity: 0}
+            to {opacity: 1}
+        }
+
+        .traffic-light-box {
+            width: 200px;
+            height: 200px;
+            background-color: #2C7DFA;
+            animation-name: fadein; /*Refers to the keyframe name*/
+            animation-duration: 3s; /* How long it will take*/
+            animation-timing-function:ease-in-out; /*Start slow then finish fast?*/
+            animation-iteration-count: infinite; /* repeat of animation?*/
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="traffic-light-box">
+   <circle class="green" class="circle" >Green</circle>
+   <circle class="red" class="circle">Red</circle>
+   <circle class="yellow" class="circle">Yellow</circle>
+</div>
+</body>
+</html>

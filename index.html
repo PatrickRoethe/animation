@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            gap: 2rem;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+
+        }
+        @keyframes fadein {
+       from {opacity: 0}
+       to {opacity: 1}
+        }
+
+        .fade-in-box {
+            width: 200px;
+            height: 200px;
+            background-color: #2C7DFA;
+            animation-name: fadein; /*Refers to the keyframe name*/
+            animation-duration: 3s; /* How long it will take*/
+            animation-timing-function:ease-in-out; /*Start slow then finish fast?*/
+            animation-iteration-count: infinite; /* repeat of animation?*/}
+
+        .traffic-light {
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="traffic-light">
+    <div class="fade-in-box" class="Red"></div>
+    <div class="fade-in-box" class="Green"></div>
+    <div class="fade-in-box" class="yellow"></div>
+    </div>
+</body>
+</html>
